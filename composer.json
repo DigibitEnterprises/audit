@@ -1,0 +1,43 @@
+{
+    "name": "digibit/audit",
+    "description": "Attribute-driven snapshotting and diffing of PHP objects for audit trails and change tracking.",
+    "type": "library",
+    "keywords": [
+        "diff",
+        "changeset",
+        "audit",
+        "snapshot",
+        "attributes",
+        "change-tracking"
+    ],
+    "homepage": "https://github.com/DigibitEnterprises/audit",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Anthony Lofthouse",
+            "email": "digibitenterprises@gmail.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/DigibitEnterprises/audit/issues",
+        "source": "https://github.com/DigibitEnterprises/audit"
+    },
+    "require": {
+        "php": "^8.2",
+        "digibit/resolver": "^1.0",
+        "symfony/property-access": "^7.4 || ^8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^13.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Digibit\\Audit\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Digibit\\Audit\\Tests\\": "tests/"
+        }
+    }
+}
